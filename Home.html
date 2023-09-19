@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria e Visualizações 3D</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+
+            text-decoration: underline;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 18px;
+        }
+
+        .card_shapes {
+            flex-direction: row-reverse;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 1100px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .shapes-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .shapes {
+            flex: 1;
+            margin: 0 15px;
+            background-color: rgb(189, 189, 189);
+            padding: 20px;
+            border-radius: 9px;
+        }
+
+
+        .card_shapes h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .card_shapes p {
+            font-size: 18px;
+        }
+
+        .shapes a {
+            color: white;
+            font-weight: 800;
+        }
+
+
+        .shapes h3 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Geometria e Visualizações 3D</h1>
+    </header>
+    <nav>
+        <a href="#geometria_basica">Geometria Básica</a>
+        <a href="#geometria_euclidiana">Geometria Euclidiana</a>
+        <a href="#geometria_analitica">Geometria Analítica</a>
+        <a href="#prisma_identificacao">O que é um Prisma?</a>
+        <a href="#planificacao_3d">Planificação de Figuras 3D</a>
+    </nav>
+    <div class="container" id="geometria_basica">
+        <div class="card">
+            <h2>Geometria Básica</h2>
+            <p>
+                A geometria básica é o alicerce da matemática que explora as propriedades e medidas de figuras
+                geométricas no espaço bidimensional (2D). Ela fornece as ferramentas essenciais para calcular áreas e
+                perímetros das principais figuras geométricas, como triângulos, quadrados, retângulos e círculos.
+            </p>
+            <p>
+                Alguns tópicos chave incluem:
+            </p>
+            <ul>
+                <li>Definições de conceitos geométricos, como ponto, linha, segmento de reta e ângulo.</li>
+                <li>Cálculo da área de figuras planas usando fórmulas específicas para cada tipo de figura, incluindo:
+                </li>
+                <ul>
+                    <li>Área do triângulo: A = (base * altura) / 2</li>
+                    <li>Área do quadrado: A = lado * lado</li>
+                    <li>Área do retângulo: A = base * altura</li>
+                    <li>Área do círculo: A = π * raio²</li>
+                </ul>
+                <li>Cálculo do perímetro, que é a medida do contorno de uma figura.</li>
+                <li>Estudo das relações entre lados, ângulos e propriedades especiais de triângulos, como o Teorema de
+                    Pitágoras.</li>
+            </ul>
+            <p>
+                A geometria básica é fundamental para compreender o mundo ao nosso redor, desde calcular a área de um
+                terreno até projetar uma sala.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="geometria_euclidiana">
+        <div class="card">
+            <h2>Geometria Euclidiana</h2>
+            <p>
+                A geometria euclidiana, nomeada em homenagem ao matemático grego Euclides, é uma abordagem rigorosa e
+                sistemática para o estudo das figuras geométricas e suas propriedades no espaço tridimensional (3D). Ela
+                estabeleceu as bases para a geometria que usamos hoje.
+            </p>
+            <p>
+                Alguns destaques da geometria euclidiana incluem:
+            </p>
+            <ul>
+                <li>Cálculo da área de figuras planas, como triângulos, quadriláteros e polígonos regulares.</li>
+                <li>Cálculo do volume de poliedros, que são sólidos limitados por faces planas.</li>
+                <li>Cálculo do volume de corpos redondos, como esferas, cilindros e cones.</li>
+                <li>Uso de postulados e axiomas para deduzir teoremas e proposições geométricas.</li>
+            </ul>
+            <p>
+                A geometria euclidiana desempenha um papel crucial na compreensão das formas, estruturas e medidas no
+                nosso mundo tridimensional.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="geometria_analitica">
+        <div class="card">
+            <h2>Geometria Analítica</h2>
+            <p>
+                A geometria analítica é uma fusão da geometria com a álgebra que permite representar figuras geométricas
+                usando coordenadas e equações. Ela fornece uma maneira eficaz de resolver problemas geométricos
+                complexos usando métodos algébricos.
+            </p>
+            <p>
+                Principais conceitos em geometria analítica:
+            </p>
+            <ul>
+                <li>Coordenadas cartesianas, que representam pontos no espaço.</li>
+                <li>Equações de retas, círculos, elipses e outras figuras usando coordenadas.</li>
+                <li>Transformações geométricas, como rotações, translações e dilatações.</li>
+                <li>Sistemas de coordenadas em 3D, permitindo a análise de figuras no espaço tridimensional.</li>
+            </ul>
+            <p>
+                A geometria analítica é amplamente utilizada em campos como física, engenharia, computação gráfica e
+                muito mais.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="prisma_identificacao">
+        <div class="card">
+            <h2>O que é um Prisma e Como Identificá-lo?</h2>
+            <p>
+                Um prisma é um sólido tridimensional que possui duas bases planas congruentes (idênticas) e faces
+                laterais retangulares ou paralelogramas. As bases do prisma são paralelas e congruentes, o que significa
+                que elas têm a mesma forma e tamanho.
+            </p>
+            <p>
+                Para identificar um prisma em uma figura 3D, você pode procurar por suas características principais:
+            </p>
+            <ul>
+                <li>Presença de duas bases planas que são figuras geométricas congruentes (mesma forma e tamanho).</li>
+                <li>Faces laterais retangulares ou paralelogramas que conectam as bases.</li>
+                <li>As arestas das bases são paralelas umas às outras.</li>
+            </ul>
+            <p>
+                Exemplos comuns de prismas incluem o prisma retangular, prisma triangular, prisma hexagonal, entre
+                outros. Eles podem ter diferentes números de lados em suas bases, mas todos compartilham as
+                características fundamentais de um prisma.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="planificacao_3d">
+        <div class="card">
+            <h2>Planificação de Figuras 3D</h2>
+            <p>
+                A planificação de figuras 3D é o processo de representar objetos tridimensionais em um formato
+                bidimensional (2D) para análise e comunicação. Esse conceito é fundamental em áreas como design
+                industrial, arquitetura e fabricação.
+            </p>
+            <p>
+                Alguns exemplos incluem:
+            </p>
+            <ul>
+                <li>Desenvolvimento de padrões para criar formas complexas a partir de materiais planos.</li>
+                <li>Representação de estruturas 3D, como embalagens e mapas topográficos.</li>
+                <li>Uso de projeções ortogonais para criar vistas 2D precisas de objetos 3D.</li>
+            </ul>
+            <p>
+                A planificação de figuras 3D é essencial para transformar conceitos 3D em realidade.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="Shapes_3D">
+        <div class="container" id="Shapes_3D">
+            <div class="card_shapes">
+                <h2>Visualização de algumas formas geométricas em 3D</h2>
+                <div class="shapes-container">
+                    <div class="shapes">
+                        <h3>Cubo</h3>
+                        <p>O cubo é um sólido geométrico tridimensional com seis faces quadradas congruentes. Todas as
+                            arestas do cubo têm o mesmo comprimento e todos os ângulos entre as faces são retos (90
+                            graus). É uma das formas mais simples e conhecidas na geometria tridimensional. O cubo tem 8
+                            vértices, 12 arestas e 6 faces.</p>
+                        <a href="Cube.html">Clique aqui para ver o cubo</a>
+                    </div>
+                    <div class="shapes">
+                        <h3>Pirâmide</h3>
+                        <p>Uma pirâmide é um sólido tridimensional com uma base poligonal e faces triangulares que se
+                            encontram em um único ponto chamado vértice. A forma da base da pirâmide pode variar, mas
+                            todas as faces laterais são triângulos. A altura da pirâmide é a distância entre a base e o
+                            vértice. O número de vértices, arestas e faces laterais depende do número de lados da base.
+                        </p>
+                        <a href="Py.html">Clique aqui para ver a pirâmide</a>
+                    </div>
+                    <div class="shapes">
+                        <h3>Cilindro</h3>
+                        <p>O cilindro é um sólido tridimensional que tem duas bases circulares congruentes e uma
+                            superfície lateral que é formada por uma curva reta chamada de geratriz. As bases do
+                            cilindro são paralelas e estão alinhadas uma em relação à outra. A altura do cilindro é a
+                            distância entre as duas bases. O cilindro tem 3 arestas: duas na base e uma na lateral.</p>
+                        <a href="Cili.html">Clique aqui para ver o cilindro</a>
+                    </div>
+                    <div class="shapes-container">
+                        <div class="shapes">
+                            <h3>Cone</h3>
+                            <p>O cone é um sólido tridimensional que tem uma base circular e uma única face lateral que
+                                se estende desde a base até um ponto chamado vértice. A altura do cone é a distância
+                                entre a base e o vértice. Todas as arestas do cone são curvas. O número de vértices,
+                                arestas e faces laterais depende do raio da base e da altura do cone.</p>
+                            <a href="Cone.html">Clique aqui para ver o cone</a>
+                        </div>
+                        <div class="shapes">
+                            <h3>Prisma</h3>
+                            <p>Um prisma é um sólido tridimensional que tem duas bases congruentes e paralelas e faces
+                                laterais retangulares ou paralelogramos. A altura do prisma é a distância entre as duas
+                                bases. O número de vértices, arestas e faces laterais depende do número de lados da
+                                base. Por exemplo, um prisma com uma base triangular terá 6 vértices, 9 arestas e 5
+                                faces laterais.</p>
+                            <a href="Prism.html">Clique aqui para ver o prisma</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
